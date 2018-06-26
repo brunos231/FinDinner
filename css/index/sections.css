@@ -3,40 +3,43 @@
 	padding: 0;
 }
 
-.ap1{
-	width: 40%;
-	height: 400px;
+body{
 	background-color: #D3D3D3;
-	float: left;
+}
+
+.ap1{
+	width: 20%;
+	height: 400px;
 	box-sizing: border-box;
+	margin: auto;
 }
 
 .ap1 img{
-	height: 80%;
-	margin-left: 250px;
+	height: 90%;
 	margin-top: 25px;
 }
 
 .desc1{
-	width: 60%;
+	width: 80%;
 	height: 400px;
 	background-color: #D3D3D3;
-	float: left;
 	box-sizing: border-box;
+	margin: auto;
+	margin-top: 50px;
 }
 
 .desc1 h2{
 	width: 80%;
 	box-sizing: border-box;
 	margin: auto;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 30px;
+	text-align: center;
 }
 
 .desc1 h2:hover{
 	color: #BA0000;
-	border-right: 1px solid #BA0000;
 }
 
 
@@ -46,14 +49,15 @@
 	text-align: justify;
 	margin: auto;
 	margin-bottom:20px;
+	font-size: 20px;
 }
 
 .desc2{
-	width: 60%;
+	width: 80%;
 	height: 400px;
 	background-color: #D3D3D3;
-	float: left;
 	box-sizing: border-box;
+	margin: auto;
 }
 
 .desc2 h2{
@@ -63,11 +67,11 @@
 	margin-top:20px;
 	margin-bottom:20px;
 	font-size: 30px;
+	text-align: center;
 }
 
 .desc2 h2:hover{
 	color: #BA0000;
-	border-right: 1px solid #BA0000;
 }
 
 .desc2 p{
@@ -76,22 +80,29 @@
 	text-align: justify;
 	margin: auto;
 	margin-bottom: 20px;
+	font-size: 20px;
 }
 
 .ap2{
-	width: 40%;
+	width: 20%;
 	height: 400px;
 	background-color: #D3D3D3;
-	float: left;
 	box-sizing: border-box;
+	margin: auto;
 }
 
 .ap2 img{
-	height: 80%;
-	margin-left: 250px;
+	height: 90%;
 	margin-top: 25px;
 }
 
 .botoes{
+	width: 80%;
+	height: 50px;
+	margin: auto;
+}
 
+.botoes input{
+	width: 150px;
+	height: 50px;
 }
