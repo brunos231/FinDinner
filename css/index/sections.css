@@ -8,24 +8,33 @@ body{
 }
 
 .ap1{
-	width: 20%;
+	width: 40%;
 	height: 400px;
 	box-sizing: border-box;
 	margin: auto;
+	float: left;
+}
+
+.ap1-img{
+	width: 200px;
+	height: 350px;
+	margin: auto;
+	clear: both;
+	margin-top: 30px;
 }
 
 .ap1 img{
-	height: 90%;
-	margin-top: 25px;
+	width: 200px;
+	height: 350px;
 }
 
 .desc1{
-	width: 80%;
+	width: 60%;
 	height: 400px;
 	background-color: #D3D3D3;
 	box-sizing: border-box;
 	margin: auto;
-	margin-top: 50px;
+	float: left;
 }
 
 .desc1 h2{
@@ -52,20 +61,47 @@ body{
 	font-size: 20px;
 }
 
+.espaco{
+	width: 100%;
+	height: 100px;
+	clear: both;
+}
+
+.ap2{
+	width: 40%;
+	height: 400px;
+	box-sizing: border-box;
+	margin: auto;
+	float: left;
+}
+
+.ap2-img{
+	width: 200px;
+	height: 350px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.ap2 img{
+	width: 200px;
+	height: 350px;
+}
+
 .desc2{
-	width: 80%;
+	width: 60%;
 	height: 400px;
 	background-color: #D3D3D3;
 	box-sizing: border-box;
 	margin: auto;
+	float: left;
 }
 
 .desc2 h2{
 	width: 80%;
 	box-sizing: border-box;
 	margin: auto;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 30px;
 	text-align: center;
 }
@@ -74,26 +110,14 @@ body{
 	color: #BA0000;
 }
 
+
 .desc2 p{
 	width: 80%;
 	box-sizing: border-box;
 	text-align: justify;
 	margin: auto;
-	margin-bottom: 20px;
+	margin-bottom:20px;
 	font-size: 20px;
-}
-
-.ap2{
-	width: 20%;
-	height: 400px;
-	background-color: #D3D3D3;
-	box-sizing: border-box;
-	margin: auto;
-}
-
-.ap2 img{
-	height: 90%;
-	margin-top: 25px;
 }
 
 .botoes{
