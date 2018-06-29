@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript" src="js/cadastro.js">
+
+	</script>
+
+	<title>registration page</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/cadastro/header.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastro/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastro/section.css">
+	<link rel="stylesheet" type="text/css" href="css/descricao/footer.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet"> 
+
+</head>
+<body>
+	<header><!--Cabeçalho da pagina-->
+		<div class="logotipo">
+			<img src="imagens/logo.png">
+		</div>
+	</header>
+
+	<nav>
+		<nav><!--Menu da pagina-->
+			<ul class="links">
+				<a href="index.html"><li>Home Page</li></a>
+				<a href=""><li>App Description</li></a>
+				<a href=""><li>Partner Restaurants</li></a>
+				<a href=""><li>Who We Are</li></a>
+				<a href=""><li>Pre-Registration</li></a>
+			</ul>
+			<div class="login">
+				<ul class="linklog">
+					<a href="login.html"><li>Login</li></a>
+				</ul>
+			</div>
+			<div class="flag">
+				<div class="icon1">
+					<a href=""><img src="imagens/brasil-ico.png"></a>
+				</div>
+				<div class="icon2">
+					<a href=""><img src="imagens/usa-ico.png"></a>
+				</div>
+			</div>
+		</nav>
+	</nav>
+
+	<section>
+			<div class="esquerda">
+				
+			</div>
+	
+			</div>
+
+			<div class="caixa">
+
+					<h1 align="center" style="color:rgb(255, 0, 0)"><B>Register Here</B></h1><br>
+					<p>
+				
+				<br><br><br>
+				<p><form name="cadastro" onSubmit="return validacao()" action="page2.html">
+						<legend align="center"><b>Personal Data</b></legend><br>
+
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="lnome">Name :</label> 
+								<input type="text" name="txtnome" required="required" pattern="[A-z\s]+$" size="20" maxlength="13" placeholder="Your name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+							<label for="lnome">Last name :</label> 
+								<input type="text" name="txtnome" required="required" pattern="[A-z\s]+$" size="25" maxlength="30" placeholder="Your last name">
+
+							<p>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="num">CPF :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="text" name="txtcpf" required="required"  size="20" maxlength="14" placeholder="Ex:000.000.000-00">
+
+							</p>
+							<br>
+
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">E-mail :</label>
+								<input type="email" name="txtemail" class="input-text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="20" maxlength="30" id="lemail" autocomplete="on">
+							<br>
+
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sex :<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rdsexo" value="Masculino" id="cmasc" required="">
+								<label for="cmasc">Male</label>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rdsexo" value="Feminino" id="cfem">
+								<label for="cfem">Famele</label></p>
+								<br>
+
+							<br>
+
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="dt">Date of birthday :</label>
+								<input type="date" name="dtnasc" required="required" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" max="2018-01-01" min="1940-01-01"></p>
+							<br>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="senha">Password :</label>
+								<input type="password" name="senha1" placeholder="Minimo 8 caracteres" size="20" maxlength="12" required="required">
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="senha">Confirm your password :</label>
+								<input type="password" name="senha2" placeholder="confirme sua senha" size="20" maxlength="12" required="required"></p>
+							<br>
+							<br>
+							<br>
+					
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="Register">
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="limpar" value="Clean"></p>
+							<br>
+						
+				</form>
+			</div>
+
+			<div class="direita">
+				
+			</div>
+
+			<section>
+				<footer><!--Rodapé da pagina-->
+					<p>Rodapé da Pagina</p>
+				</footer>
+			</section>
+	</section>
+
+
+</body>
+</html>
