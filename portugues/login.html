@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html>
 <head>
-	<title>FinDinner - Quem Somos</title>
+
+	<script type="text/javascript" src="js/cadastro.js"></script>
+
+	<title>FinDinner - Login</title>
 	<link rel="shortcut icon" type="image/x-png" href="imagens/logo.png">
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/descricao/header.css">
 	<link rel="stylesheet" type="text/css" href="css/descricao/nav.css">
-	<link rel="stylesheet" type="text/css" href="css/quemsomos/section.css">
+	<link rel="stylesheet" type="text/css" href="css/login/section.css">
 	<link rel="stylesheet" type="text/css" href="css/index/footer.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet"> 
+
 </head>
 <body>
-	<header>
+
+	<header><!--Cabeçalho da pagina-->
 		<div class="logotipo">
 			<img src="imagens/logo.png">
 		</div>
@@ -30,7 +35,7 @@
 			</ul>
 			<div class="login">
 				<ul class="linklog">
-					<a href=""><li>Login</li></a>
+					<a href="login.html"><li>Login</li></a>
 				</ul>
 			</div>
 			<div class="flag">
@@ -44,16 +49,59 @@
 		</nav>
 	</nav>
 
-	<section class="desc"><!--Area da descrição da página-->
-		<h2 class="titulo">Equipe FinDinner</h2>
-		<p>Essas são as pessoas por trás do FinDinner. Vou falar um pouco sobre nossa equipe que é formada por, Anderson Favaro, Bruno Da costa, Alisson Campos, Cintia Martins e Eduardo Trindade. Bruno que é responsavél pelo FrontEnd do nosso site, Alisson cuida da parte comercial e parceiros da nossa equipe, Cintia faz toda a parte de arte digital, Eduardo está por trás do FrontEnd juntamente com o Bruno e por fim Anderson o fundador do FinDinner e programador geral do App.
-		Um pouco sobre nossa empresa: ela foi criada em fevereiro de 2018 em São Paulo. FinDinner surgiu em meio a uma brincadeira do fundador com seu amigo Rodrigo, que juntos pensaram em como poderia criar algo inovador e que o mercado de hoje está em falta, trazendo algo inovador e divertido ao mesmo tempo. Assim nasceu o FinDinner que veio pra ficar !!</p>
-	</section>
+	<section>
+		<div class="esquerda">
+			
+		</div>
 
-	<section class="imagem"><!--Area esquerda da pagina-->
-		<img src="imagens/tmjjj.png">
-	</section>
+		<div class="caixa">
+			<div class="titulo">
+				<h2>Login!</h2>
+			</div>
+				
+			<form name="cadastro" onSubmit="return validacao()" action="page2.html" align="center">
+				<table>
+					<tr>
+						<td class="txt">
+							<label for="email">E-mail :</label>
+						</td>
+						<td class="box">
+							<input type="email" name="txtemail" class="input-text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="20" maxlength="30" id="lemail" autocomplete="on">
+						</td>
+					</tr>
+					<tr>
+						<td class="txt">
+							<label for="senha">Senha :</label>
+						</td>
+						<td class="box">
+							<input type="password" name="senha1" placeholder="" size="20" maxlength="12" required="required">
+						</td>
+					</tr>
+				</table>
+				<div class="btn">
+					<input class="btn-g" type="submit" name="submit" value="Entrar">
+					<input class="btn-r" type="reset" name="limpar" value="Limpar">
+				</div>					
+			</form>
+			<div class="lgn">
+				<a href="http://www.facebook.com.br" target="newtab">
+					<img src="imagens/face.png">
+					<p>Login com Facebook</p>
+				</a>
+			</div>
+			<br>
+			<div class="lgn">
+				<a href="http://www.twitter.com.br" target="newtab">
+					<img src="imagens/twitter.png">
+					<p>Login com Twitter</p>
+				</a>
+			</div>
+		</div>
 
+		<div class="direita">
+			
+		</div>
+	</section>
 	<footer><!--Rodapé da pagina-->
 		<div class="logofooter">
 			<img src="imagens/logo.png">
@@ -83,8 +131,12 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+
+
+
+
 </body>
 </html>
-	
-		
-	

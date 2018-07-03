@@ -6,13 +6,14 @@
 
 	</script>
 
-	<title>Página de Cadastro</title>
+	<title>FinDinner - Cadastro</title>
+	<link rel="shortcut icon" type="image/x-png" href="imagens/logo.png">
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="css/cadastro/header.css">
-	<link rel="stylesheet" type="text/css" href="css/cadastro/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/descricao/header.css">
+	<link rel="stylesheet" type="text/css" href="css/descricao/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/cadastro/section.css">
-	<link rel="stylesheet" type="text/css" href="css/descricao/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/index/footer.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet"> 
 
@@ -28,10 +29,10 @@
 		<nav><!--Menu da pagina-->
 			<ul class="links">
 				<a href="index.html"><li>Pagina Inicial</li></a>
-				<a href=""><li>Descrição do App</li></a>
-				<a href=""><li>Restaurantes Parceiros</li></a>
-				<a href=""><li>Quem Somos</li></a>
-				<a href=""><li>Pré-Cadastro</li></a>
+				<a href="descricao.html"><li>Descrição do App</li></a>
+				<a href="parceiros.html"><li>Restaurantes Parceiros</li></a>
+				<a href="quemsomos.html"><li>Quem Somos</li></a>
+				<a href="cadastro.html"><li>Cadastro</li></a>
 			</ul>
 			<div class="login">
 				<ul class="linklog">
@@ -50,80 +51,133 @@
 	</nav>
 
 	<section>
-			<div class="esquerda">
-				
+		<div class="esquerda">
+			
+		</div>
+
+		<div class="caixa">
+			<div class="titulo">
+				<h2>Faça seu cadastro!</h2>
 			</div>
-	
-			</div>
+			
+			<form name="cadastro" onSubmit="return validacao()" action="page2.html">
 
-			<div class="caixa">
-
-					<h1 align="center" style="color:rgb(255, 0, 0)"><B>Faça seu Cadastro</B></h1><br>
-					<p>
-				
-				<br><br><br>
-				<p><form name="cadastro" onSubmit="return validacao()" action="page2.html">
-						<legend align="center"><b>Dados Pessoais</b></legend><br>
-
-							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="lnome">Nome :</label> 
+				<table>
+					<tr>
+						<td class="txt">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="lnome">Nome :</label> 
+						</td>
+						<td class="box">
 								<input type="text" name="txtnome" required="required" pattern="[A-z\s]+$" size="20" maxlength="13" placeholder="Informe seu nome">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+						</td>
+					</tr>
+					<tr>
+						<td class="txt">
 							<label for="lnome">Sobrenome :</label> 
-								<input type="text" name="txtnome" required="required" pattern="[A-z\s]+$" size="25" maxlength="30" placeholder="Informe seu sobrenome">
+						</td>
+						<td class="box">
+							<input type="text" name="txtnome" required="required" pattern="[A-z\s]+$" size="25" maxlength="30" placeholder="Informe seu sobrenome">
+						</td>
+					</tr>
 
-							<p>
-							<br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="num">CPF :&nbsp;&nbsp;&nbsp;&nbsp;</label>
-								<input type="text" name="txtcpf" required="required"  size="20" maxlength="14" placeholder="Ex:000.000.000-00">
+					<tr>
+						<td class="txt">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="num">CPF :</label>
+						</td>
+						<td class="box">
+							<input type="text" name="txtcpf" required="required"  size="20" maxlength="14" placeholder="Ex:000.000.000-00">
+						</td>
+					</tr>
 
-							</p>
-							<br>
+					<tr>
+						<td class="txt">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">E-mail :</label>
+						</td>
+						<td class="box">
+							<input type="email" name="txtemail" class="input-text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="20" maxlength="30" id="lemail" autocomplete="on" placeholder="exemplo@exemplo.com">
+						</td>
+					</tr>
 
-							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="email">E-mail :</label>
-								<input type="email" name="txtemail" class="input-text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="20" maxlength="30" id="lemail" autocomplete="on">
-							<br>
-
-							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sexo :<br>
+					<tr>
+						<td class="txt">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sexo :
+						</td>
+						<td class="box1">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rdsexo" value="Masculino" id="cmasc" required="">
-								<label for="cmasc">Masculino</label>
+							<label for="cmasc">Masculino</label>
 
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rdsexo" value="Feminino" id="cfem">
-								<label for="cfem">Feminino</label></p>
-								<br>
+							<label for="cfem">Feminino</label>
+						</td>
+					</tr>
 
-							<br>
+					<tr>
+						<td class="txt">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="dt">Data de Nascimento :</label>
+						</td>
+						<td class="box">
+							<input type="date" name="dtnasc" required="required" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" max="2018-01-01" min="1940-01-01" placeholder="__/__/____">
+						</td>
+					</tr>
 
-							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="dt">Data de Nascimento :</label>
-								<input type="date" name="dtnasc" required="required" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" max="2018-01-01" min="1940-01-01"></p>
-							<br>
-
+					<tr>
+						<td class="txt">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="senha">Senha :</label>
-								<input type="password" name="senha1" placeholder="Minimo 8 caracteres" size="20" maxlength="12" required="required">
+						</td>
+						<td class="box">
+							<input type="password" name="senha1" placeholder="Minimo 8 caracteres" size="20" maxlength="12" required="required">
+						</td>
+					</tr>
 
+					<tr>
+						<td class="txt">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="senha">Confirme sua senha :</label>
-								<input type="password" name="senha2" placeholder="confirme sua senha" size="20" maxlength="12" required="required"></p>
-							<br>
-							<br>
-							<br>
-					
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="Registrar">
+						</td>
+						<td class="box">
+							<input type="password" name="senha2" placeholder="confirme sua senha" size="20" maxlength="12" required="required">
+						</td>
+					</tr>
+				</table>
+					<div class="btn">
+						<input class="btn-g" type="submit" name="submit" value="Registrar">
+						<input class="btn-r" type="reset" name="limpar" value="Limpar">
+					</div>
+		</form>
+		</div>
 
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="limpar" value="Limpar"></p>
-							<br>
-						
-				</form>
-			</div>
-
-			<div class="direita">
-				
-			</div>
-
-			<section>
-				<footer><!--Rodapé da pagina-->
-					<p>Rodapé da Pagina</p>
-				</footer>
-			</section>
+		<div class="direita">
+			
+		</div>
 	</section>
+	<footer><!--Rodapé da pagina-->
+		<div class="logofooter">
+			<img src="imagens/logo.png">
+		</div>
+		<div class="email">
+			<p>findinner.contato@gmail.com.br</p>
+		</div>
+		<div class="linksuteis">
+			<ul class="linksfooter">
+				<li><a href="index.html">Pagina Inicial</a></li>
+				<li><a href="descricao.html">Descrição do App</a></li>
+				<li><a href="parceiros.html">Restaurantes Parceiros</a></li>
+				<li><a href="quemsomos.html">Quem Somos</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+			</ul>
+		</div>
+		<div class="base">
+			<div class="midias">
+				<a href="http://www.facebook.com/findinner.app.94"><img src="imagens/face.png"></a>
+				<a href="http://www.instagram.com/findinner"><img src="imagens/instagram.png"></a>
+				<a href="http://www.skype.com.br"><img src="imagens/skype.png"></a>
+				<a href="http://www.twitter.com.br"><img src="imagens/twitter.png"></a>
+			</div>
+			<div class="copyrigth">Copyrigth © 2018 - FinDinner</div>
+			<div class="fundovazio">
+			
+			</div>
+		</div>
+	</footer>
 
 
 </body>
