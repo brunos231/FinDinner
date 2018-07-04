@@ -77,7 +77,8 @@ table{
 .box input{
 	width: 80%;
 	height: 35px;
-	border: 1px solid #BA0000;
+	border: 1px solid #000;
+	border-radius: 10px;
 }
 
 .btn{
@@ -93,10 +94,11 @@ table{
 	height: 50px;
 	cursor: pointer;
 	font-size: 20px;
+	border-radius: 10px;
 }
 
 .btn input:hover{
-	border: 1px solid #BA0000;
+	border: 1px solid #000;
 }
 
 
@@ -129,7 +131,7 @@ table{
 	float: left;
 	font-size: 20px;
 	padding: 15px;
-	color: #BA0000;
+	color: #000;
 }
 
 .lgn p:hover{

@@ -6,7 +6,7 @@ function validacao()
 			var digito = new Array(14);
 			var CPF = new Array(11);
 			var I,J,DV1,DV2;
-			digito = document.cadastro.txtcpf.value
+			digito = document.cadastro.txtcpf.value;
 
 			J = 0;
 			for(I=0;I<14;I++) //I++ ~ I=I+1 INCREMENTO//

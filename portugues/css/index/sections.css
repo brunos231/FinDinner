@@ -156,3 +156,31 @@ body{
 	height: 500px;
 	border: 3px solid #BA0000;
 }
+
+.boxPesq{
+	width: 100%;
+	height: 50px;
+	margin: auto;
+}
+
+.boxPesq form{
+	width: 100%;
+	height: 50px;
+}
+
+.box{
+	width: 200px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.btn{
+	width: 100px;
+	height: 40px;
+}
+
+.formulario{
+	width: 30%;
+	height: 50px;
+	margin: auto;
+}
