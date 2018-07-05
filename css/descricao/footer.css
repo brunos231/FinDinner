@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+footer{
+	width: 100%;
+	height: 360px;
+	background-image: url("../../imagens/footer4.jpg");
+	background-attachment: fixed; /*Deixa a imagem de fundo fixa*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	clear: both;
+}
+
+.logofooter{
+	width: 150px;
+	height: 140px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.logofooter img{
+	width: 150px;
+	height: 140px;
+}
+
+.email{
+	width: 40%;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.linksuteis{
+	width: 100%;
+	height: 50px;
+	font-size: 25px;
+}
+
+.linksfooter{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.linksfooter li{
+	width: 20%;
+	height: 100px;
+	float: left;
+	color: #000;
+}
+
+.linksfooter li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.base{
+	width: 100%;
+	height: 100px;
+}
+
+.midias{
+	width: 25%;
+	height: 45px;
+	float: left;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.midias img{
+	width: 40px;
+	height: 40px;
+}
+
+.copyrigth{
+	width: 50%;
+	height: 45px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fundovazio{
+	width: 25%;
+	height: 45px;
+	float: left; 
+}
+
+
+
+
+
+
+
